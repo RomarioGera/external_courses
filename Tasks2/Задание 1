@@ -1,6 +1,23 @@
 Задание 1
 Написать функцию, которая принимает либо число, либо строку и в зависимости от типа переданного аргумента возвращает 'number' или 'string'. Если аргумент не число/строка функция возвращает undefined.
 
-var num = 1
-var str = "string"
-var undef = [1, "2", "EPAM", Infinity]
+вариант 1:
+var task1 = function(data) {
+    var data;
+    data = 1;
+};
+  var result = typeof(data)
+  console.log(result);
+
+вариант 2:  
+ var task1 = function(a){
+    var data;
+    data = 1;
+    if (data == NaN)
+    console.log('string')
+    else if(data != NaN){
+        console.log('number')
+    }
+    else{
+    console.log('undefined')}
+}
