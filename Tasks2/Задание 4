@@ -1,0 +1,13 @@
+Написать функцию, которая проверяет одинаковые ли элементы в массиве и выводит возвращает true или false.
+
+var input = ['a', 'b', 'a', 'c', 'c'],
+    duplicates = [],
+    i, j;
+for (i = 0, j = input.length; i < j; i++) {
+  if (duplicates.indexOf(input[i]) === -1 && input.indexOf(input[i], i+1) !== -1) {
+    duplicates.push(input[i]);
+  }
+}
+if(duplicates.length >= 1){
+    alert('True - Массив содержит дубликаты');
+} else{alert('False - Массив не содержит дубликатов');}
