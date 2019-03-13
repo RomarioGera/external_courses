@@ -1,23 +1,9 @@
 Задание 1
 Написать функцию, которая принимает либо число, либо строку и в зависимости от типа переданного аргумента возвращает 'number' или 'string'. Если аргумент не число/строка функция возвращает undefined.
 
-вариант 1:
-var task1 = function(data) {
-    var data;
-    data = 1;
-};
-  var result = typeof(data)
-  console.log(result);
-
-вариант 2:  
- var task1 = function(a){
-    var data;
-    data = 1;
-    if (data == NaN)
-    console.log('string')
-    else if(data != NaN){
-        console.log('number')
-    }
-    else{
-    console.log('undefined')}
-}
+var data = 1;
+if(typeof(data) === "number"){
+  console.log("number");
+} else if(typeof(data) === 'string'){
+  console.log('string');
+} else {console.log('undefined')}
