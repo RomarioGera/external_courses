@@ -20,4 +20,4 @@ var userD = Object.create(Proto);
 
 userA.changeName('Mary');
 userB.changeAge('30');
-userC.promote('Senoir Developer', 100500);
+userC.promote('Senior Developer', 100500);
