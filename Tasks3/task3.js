@@ -4,7 +4,7 @@ function t3(a, b) {
             name: "Roman",
             location: "Ryazan"
         }
-    if (b.name == "Roman") {
+    if (b.name) {
         return 'true';
     } else {
         return 'false';
