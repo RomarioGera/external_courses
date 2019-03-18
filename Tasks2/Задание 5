@@ -1,7 +1,7 @@
 function getMaxOfArray(numArray) {
     return Math.max.apply(null, numArray);
 }
-// или такъ
+// или так
 
 Array.max = function( array ){
     return Math.max.apply( Math, array );
