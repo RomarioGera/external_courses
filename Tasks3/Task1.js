@@ -4,4 +4,4 @@ myObj.Age = 33;
 myObj.Location = 'Ryazan';
 
 delete myObj.Location;
-return myObj;
+
