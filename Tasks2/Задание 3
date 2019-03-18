@@ -8,17 +8,13 @@ var zero = 0;
 for (var ce = 2; ce < arr.length; ce++) {
     if (ce % 2 == 0) {
         countEven++;
-    }
+    } 
   }
 
 for (var co = 1; co < arr.length; co++) {
    if (co % 2 != 0) {
     countOdd++;
-    }
-  }
-
-for (var z = 1; z < arr.length; z++) {
-    if (z === 0) {
+    } else if (co === 0) {
     zero++;
     }
   }
