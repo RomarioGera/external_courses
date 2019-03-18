@@ -1,6 +1,7 @@
-var a = {
-    Name = 'Roman',
-    Age = 33,
-    Location = 'Ryazan'
-}
-delete a.Location;
+var myObj = {};
+myObj.Name = 'Roman';
+myObj.Age = 33;
+myObj.Location = 'Ryazan';
+
+delete myObj.Location;
+return myObj;
