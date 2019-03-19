@@ -1,12 +1,15 @@
-function t3(a, b) {
-    a = "string",
-        b = {
-            name: "Roman",
-            location: "Ryazan"
-        }
-    if (b.name) {
-        return 'true';
-    } else {
-        return 'false';
+var myObj = {
+    a: "string",
+    b: {
+        name: "Roman",
+        location: "Ryazan"
     }
 }
+function t3(obj, prop) {
+    if (obj.hasOwnProperty(prop)) {
+        return true;
+    } else {
+        return false;
+    }
+}
+t3(myObj, "b") 
