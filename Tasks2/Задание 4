@@ -11,3 +11,16 @@ if(duplicates.length >= 1){
     alert('True - Массив содержит дубликаты');
 } else{alert('False - Массив не содержит дубликатов');}
 }
+
+//или
+a()
+function a() {
+    var input = ['a', 'b', 'a', 'c', 'c'];
+    for (i = 0; i < input.length; i++) {
+        for (y = 0; y < input.length; y++) {
+            if (input[i] == input[y] && i != y) {
+                return 'True - Массив содержит дубликаты';
+            }
+        }
+    } return 'False - Массив не содержит дубликатов'
+}
