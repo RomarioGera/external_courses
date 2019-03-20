@@ -5,4 +5,4 @@ function createObj(obj) {
         Location: 'location'
     }
 }
-console.log(obj);
+console.log(createObj);
