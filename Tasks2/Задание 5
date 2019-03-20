@@ -1,6 +1,13 @@
-getMaxOfArray(numArray);
-var numArray = [1, 2, 3, 456];
+getMaxOfArray(arr);
+var arr = [1, 2, 3, 456];
 
-function getMaxOfArray(numArray) {
-    return Math.max.apply(null, numArray);
+function getMaxOfArray(arr) {
+    var max = arr[0];
+    for (var i = 1; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+    }
+    return max;
 }
+
