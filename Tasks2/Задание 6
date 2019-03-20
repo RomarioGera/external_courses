@@ -10,3 +10,5 @@ function typeOfNumber(input) {
         } return 'Вы ввели простое число';
     }
 }
+
+typeOfNumber(input)
