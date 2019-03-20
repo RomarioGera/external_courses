@@ -1,26 +1,21 @@
-Написать функцию, которая посчитает и выведет в консоль количество четных и нечетных элементов в массиве. Если в массиве есть нулевой элемент, то он учитывается и выводится отдельно. Возвращаемое значение -- массив вида [<кол-во четных>, <кол-во нечетных>, <кол-во нулей>]
-
-var arr = [1, 2, 3, 0]
+var arr = [1, 2, 3, 0];
 
 function a(arr) {
   var countEven = 0;
   var countOdd = 0;
   var zero = 0;
-  for (var ce = 2; ce < arr.length; ce++) {
-    if (ce % 2 == 0) {
+
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 != 0) {
+      countOdd++;
+    } else if (arr[i] === 0) {
+      zero++;
+    } else if (arr[i] % 2 == 0) {
       countEven++;
     }
   }
-
-  for (var co = 1; co < arr.length; co++) {
-    if (co % 2 != 0) {
-      countOdd++;
-    } else if (co === 0) {
-      zero++;
-    }
-  }
-
   resultArray = [countEven, countOdd, zero];
-  return resultArray;}
+  return resultArray;
+}
 
 a(arr);
