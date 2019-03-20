@@ -6,10 +6,8 @@ var myObj = {
     }
 }
 function t3(obj, prop) {
-    if (obj.hasOwnProperty(prop)) {
-        return obj;
-    } else {
+    if (!obj.hasOwnProperty(prop)) {
         obj[prop] = 'new';
-        
-    } return obj;
+    }
+    return obj;
 }
