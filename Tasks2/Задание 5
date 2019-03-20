@@ -1,8 +1,6 @@
+getMaxOfArray(numArray);
+var numArray = [1, 2, 3, 456];
+
 function getMaxOfArray(numArray) {
     return Math.max.apply(null, numArray);
 }
-// или так
-
-Array.max = function( array ){
-    return Math.max.apply( Math, array );
-};
