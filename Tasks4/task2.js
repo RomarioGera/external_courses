@@ -1,4 +1,4 @@
 function createNewObjWOProto(newObj) {
-    newObj = new Object();
+    newObj = Object.create(null);
     return newObj;
 }
