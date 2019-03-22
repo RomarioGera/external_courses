@@ -1,9 +1,7 @@
 function f(a, b) {
-    var aLenght = a.length();
-    if (a.length() > b) {
-        var newString = aLenght - 5;
-        var shortString = a.replace(newString);
-        var result = shortString + "«…»";
-    }
-    return result;
+  var aLenght = a.length;
+  if (a.length > b) {
+    var result = a.substring(0, b) + '...'
+  } else var result = str;
+  return result;
 }
