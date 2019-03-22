@@ -1,4 +1,4 @@
-function makeFirstCapitalLetter(a) {
-  var spacesRemove = a.trim();
-  return spacesRemove;
+function removeSpaces(a) {
+  var spacesRemoved = a.trim();
+  return spacesRemoved;
 }
