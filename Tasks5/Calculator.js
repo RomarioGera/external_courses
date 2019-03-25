@@ -1,19 +1,31 @@
-var Calculator = {
-    add: function(a, b){
+var Calculator = (function(){
+    var lastCalculationResult = null;
+    
+        function add(a, b){
         var addResult = a + b;
-        return addResult;
-    },
-    subtract: function(a, b){
+        return lastCalculationResult = addResult;
+    };
+    function subtract(a, b){
         var subtractResult = a - b;
-        return subtractResult;
-    },
-    divide: function(a, b){
+        return lastCalculationResult = subtractResult;
+    };
+    function divide(a, b){
         var divideResult = a / b;
-        return divideResult;
-    },
-    multiply: function(a, b){
+        return lastCalculationResult = divideResult;
+    };
+    function multiply(a, b){
         var multiplyResult = a * b;
-        return multiplyResult;
-    },
-    getResult: 
-};
+        return lastCalculationResult = multiplyResult;
+    };
+        
+    function getResult(lastCalculationResult){
+        return lastCalculationResult;
+    };
+    
+    function reset(lastCalculationResult){
+        lastCalculationResult = null;
+        return lastCalculationResult;
+    };
+      
+    return {}
+})()
