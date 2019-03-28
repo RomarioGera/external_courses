@@ -1,4 +1,4 @@
-function removeSpaces(a) {
-  var spacesRemoved = a.trim();
-  return spacesRemoved;
+function trim()
+{
+return this.replace(/^\s+|\s+$/g, ''); 
 }
