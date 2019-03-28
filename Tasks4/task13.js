@@ -1,4 +1,5 @@
 function t13(){
-  var result = (Math.random() * (100 - 0 + 1)) + 0;
+  var getNumber = (Math.random() * 100);
+  var result = getNumber.toFixed([0]);
   return result;
 }
