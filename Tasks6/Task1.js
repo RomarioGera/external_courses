@@ -1,11 +1,10 @@
-function slice([array], begin, end) {
-    var arrayCopy = [array];
+function slice(array, begin, end) {
+    var arrayCopy = [];
     if (end == undefined) {
         end = 0;
     } else {
-        for (i = begin; i < end; i++) {
-            arrayCopy[i]++; 
-            var result = arrayCopy[i];
+        for (var i = begin; i < end; i++) {
+            arrayCopy.push(array[i]);
         }
-    } return result;
+    } return arrayCopy;
 }
