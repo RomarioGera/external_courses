@@ -1,31 +1,33 @@
 var Calculator = (function(){
-    var lastCalculationResult = null;
-    
-        function add(a, b){
-        var addResult = a + b;
-        return lastCalculationResult = addResult;
-    };
-    function subtract(a, b){
-        var subtractResult = a - b;
-        return lastCalculationResult = subtractResult;
-    };
-    function divide(a, b){
-        var divideResult = a / b;
-        return lastCalculationResult = divideResult;
-    };
-    function multiply(a, b){
-        var multiplyResult = a * b;
-        return lastCalculationResult = multiplyResult;
-    };
+    var lastCalculationResult = 0;
+          
+    return {
+        add: function add(a) {
+            lastCalculationResult = lastCalculationResult + (a == undefined ? 0 : a);
+        return add;
+        },
         
-    function getResult(lastCalculationResult){
+        subtract: function subtract(a){
+        lastCalculationResult = lastCalculationResult - (a == undefined ? 0 : a);
+        return subtract;
+    },
+    divide: function divide(a){
+        lastCalculationResult = lastCalculationResult / (a == undefined ? 1 : a);
+        return divide;
+    },
+        
+    multiply: function multiply(a){
+        lastCalculationResult = lastCalculationResult * (a == undefined ? 1 : a);
+        return multiply;
+    },
+        
+    getResult: function (){
         return lastCalculationResult;
-    };
+    },
     
-    function reset(lastCalculationResult){
-        lastCalculationResult = null;
+    reset: function (){
+        lastCalculationResult = 0;
         return lastCalculationResult;
-    };
-      
-    return {}
+    }, 
+    }
 })()
