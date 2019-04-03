@@ -1,7 +1,7 @@
-function every(arr, callback, thisArg) {
+function every(arr, callback) {
     var i, length = arr.length;
     for (i = 0; i < length; i = i + 1) {
-        if (!callback.call(thisArg, arr[i], i, arr)) {
+        if (!callback(arr[i], i, arr)) {
             return false;
         }
     }
