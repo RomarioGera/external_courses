@@ -1,0 +1,40 @@
+#red {
+    background: red;
+}
+
+#green {
+    background: green;
+}
+
+#blue {
+    background: blue;
+}
+
+#black {
+    background: black;
+    color: white;
+}
+
+#size1 {
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#size2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    font-weight: 200;
+}
+
+#size3 {
+    font-size: 2em;
+}
+
+#size4{
+    font-size: 1.5rem;
+}
+
+#size5 {
+    font-size: 177%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
