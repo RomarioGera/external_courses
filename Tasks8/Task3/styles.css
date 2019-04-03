@@ -1,0 +1,30 @@
+div {
+    width: 90%;
+    height: 70%;
+}
+
+#first {
+    border: 2px solid #000;
+}
+
+#second {
+    outline: 2px solid #000;
+}
+
+#third {
+    box-shadow: 0 0 0 3px black;
+}
+
+#fourth {
+    border-style: dashed;
+    border-color: #222222;
+    border-top-width: 3px;
+    border-right-width: 3px;
+    border-bottom-width: 3px;
+    border-left-width: 3px;
+}
+
+#fifth {
+    border-radius: 10%;
+    border: 2px solid #000;
+}
