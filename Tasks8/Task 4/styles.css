@@ -11,9 +11,10 @@
 }
 
 #black {
-    background: black;
     color: white;
+    background-image: url(https://st.depositphotos.com/1470939/1877/i/450/depositphotos_18770841-stock-photo-abstract-purple-background-or-fabric.jpg);
 }
+
 
 #size1 {
     font-size: 15px;
