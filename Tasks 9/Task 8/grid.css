@@ -1,0 +1,36 @@
+.wrapper {
+    display: grid;
+
+}
+
+header {
+    background: lightblue;
+    grid-template-columns: 1fr;
+    padding: 1em;
+}
+
+section {
+    background: lightgreen;
+    display: grid;
+    grid-column: 1/3;
+    grid-gap: 1em;
+}
+
+article {
+    background: white;
+    margin: 0 0 1rem 0;
+}
+
+aside {
+    background: pink;
+    display: grid;
+    grid-column: 3;
+    grid-row: 1/3;
+}
+
+header,
+article,
+section,
+    {
+    padding: 1rem;
+}
