@@ -1,7 +1,7 @@
 function slice(array, begin, end) {
     var arrayCopy = [];
     if (end == undefined) {
-        end = 0;
+        end = array.length;
     }
     if (begin > end && begin < 0 && end < 0) {
         return [];
