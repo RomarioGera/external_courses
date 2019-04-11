@@ -1,6 +1,5 @@
 function reduce(arr, callback, initialValue) {
-    var i, index = 0,
-        previousValue;
+    var i, index, previousValue;
     if (initialValue != undefined) {
         previousValue = initialValue;
         index = 0;
