@@ -3,9 +3,11 @@ function reduce(arr, callback, initialValue) {
         previousValue;
     if (initialValue != undefined) {
         previousValue = initialValue;
-        index = 1;
+        index = 0;
     }
-    else { previousValue = arr[0] };
+    else { previousValue = arr[0]
+         index = 0;
+    };
     for (i = index; i < arr.length; i = i + 1) {
         previousValue = callback(previousValue, arr[i], i, arr);
     }
