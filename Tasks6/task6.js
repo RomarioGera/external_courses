@@ -3,12 +3,12 @@ function reduce(arr, callback, initialValue) {
     if (initialValue != undefined) {
         previousValue = initialValue;
         index = 0;
+    } else {
+        previousValue = arr[0];
+        index = 1;
     }
-    else { previousValue = arr[0];
-         index = 1;
-    };
     for (i = index; i < arr.length; i = i + 1) {
         previousValue = callback(previousValue, arr[i], i, arr);
     }
     return previousValue;
-}; 
+}
