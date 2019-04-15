@@ -1,4 +1,7 @@
 @media only screen and (max-width : 768px) {
+    * {
+        padding: 0
+    }
 
     .content,
     .headerRight {
@@ -9,10 +12,7 @@
         display: inline;
     }
 
-    .wrapper {
-        width: auto;
 
-    }
 
     .bar {
         background: #a5fdcf;
@@ -25,18 +25,14 @@
 
     #logo {
         position: relative;
-        margin: auto;
+        margin-left: 30%;
+        justify-content: center;
     }
 
-    #topic1 {
-        margin-left: 0px;
+    article {
         display: flex;
-        width: 100%;
-    }
-
-    #topic2 {
-        margin-right: 0px;
-        display: flex;
-        width: 100%;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        height: 100%;
     }
 }

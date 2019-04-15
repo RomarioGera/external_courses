@@ -11,7 +11,7 @@
 }
 
 .nav-right {
-   float: right;
+    float: right;
 }
 
 .nav-item {
@@ -26,4 +26,13 @@
     text-transform: uppercase;
     color: #1faae2;
     transition: 0.5s;
+}
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #1faae2;
+    margin-left: 438px;
 }
