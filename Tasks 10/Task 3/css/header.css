@@ -14,9 +14,7 @@
     background-image: url(../img/logo.png);
     text-align: center;
     padding-top: 20px;
-
 }
-
 
 .header>div {
     float: right;
@@ -27,7 +25,6 @@
     height: 30px;
     width: 30px;
 }
-
 
 .header>div>a:first-child:hover {
     background-color: none;
