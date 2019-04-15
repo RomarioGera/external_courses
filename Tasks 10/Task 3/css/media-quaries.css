@@ -1,0 +1,42 @@
+@media only screen and (max-width : 768px) {
+
+    .content,
+    .headerRight {
+        display: none;
+    }
+
+    .pictureBack {
+        display: inline;
+    }
+
+    .wrapper {
+        width: 450px;
+
+    }
+
+    .bar {
+        background: #a5fdcf;
+        border-radius: 5px;
+        border: 1px solid #129d52;
+        margin: 3px auto;
+        width: 95%;
+        height: 110px;
+    }
+
+    #logo {
+        position: relative;
+        margin: auto;
+    }
+
+    #topic1 {
+        margin-left: 0px;
+        display: flex;
+        width: 100%;
+    }
+
+    #topic2 {
+        margin-right: 0px;
+        display: flex;
+        width: 100%;
+    }
+}

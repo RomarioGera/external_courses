@@ -1,0 +1,30 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 38px 0 38px 0;
+}
+
+.nav-left {
+    display: flex;
+    float: left;
+    list-style: none;
+}
+
+.nav-right {
+   float: right;
+}
+
+
+.nav-item {
+    margin-right: 40px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    color: #6d6e71;
+}
+
+.nav-item:hover {
+    text-transform: uppercase;
+    color: #1faae2;
+    transition: 0.5s;
+}

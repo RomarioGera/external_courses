@@ -1,0 +1,63 @@
+.pictureBack {
+    z-index: 1;
+    position: relative;
+    width: 100%;
+}
+
+.arrow-up {
+    width: 0;
+    height: 0;
+      border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #1faae2;
+    margin-left: 438px;
+}
+
+#design1 {
+    width: 322px;
+    height: 241px;
+}
+
+#design2 {
+    width: 322px;
+    height: 241px;
+}
+
+#nav-back {
+
+    background-color: #f4f4f4;
+}
+
+#arrow {
+    width: 23px;
+    height: 40px;
+    background-color: #d4d4d4;
+}
+
+article {
+    display: flex;
+    position: absolute;
+    color: #6d6e71;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+article>div {
+    width: 50%;
+}
+
+#topic1 {
+    margin-left: 420px;
+}
+
+#topic2 {
+    margin-right: 420px;
+}
+
+h2 {
+    color: #6d6e71;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 24px;
+}
