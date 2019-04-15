@@ -1,0 +1,15 @@
+tr :first-child {
+    text-transform: capitalize;
+}
+
+.generalSettings tr:nth-child(odd) {
+    background-color: #e4ebf3;
+}
+
+.generalSettings tr:nth-child(even) {
+    background-color: #f2f6fa;
+}
+
+.generalSettings tr:hover {
+    background: gray;
+}
