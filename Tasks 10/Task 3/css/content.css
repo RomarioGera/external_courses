@@ -1,3 +1,15 @@
+.content {
+    height: 880px;
+    width: 1177px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main_image {
+    background: url(../img/iback.jpg) 50% 50% no-repeat;
+    height: 900px;
+}
+
 .pictureBack {
     display: flex;
     position: relative;
@@ -5,10 +17,12 @@
 }
 
 .inner-content {
-    width: 970px;
-    height: 500px;
-    margin: calc(100% - 265px) calc(100% - 420px) calc(100% - 124px) calc(100% - 617px);
+    position: absolute;
+}
 
+.inner-pics {
+    position: absolute;
+    bottom: 0;
 }
 
 .inner-content>h1 {
@@ -21,8 +35,6 @@
     font-weight: 700;
     line-height: 80.58px;
     text-transform: uppercase;
-
-
 }
 
 .inner-content>h2 {
@@ -48,9 +60,11 @@
 }
 
 #nav-back {
-    background-color: #f4f4f4;
+    width: 130px;
+    height: 241px;
     top: 823px;
     left: 1469px;
+    background: url(../img/arrow.png) 50% 50% no-repeat #f4f4f4;
 }
 
 #arrow {
