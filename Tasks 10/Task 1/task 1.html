@@ -5,71 +5,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles.css">
     <title>Task 1</title>
 </head>
 
 <body>
-    <form class="form" action="http://httpbin.org/post" method="post" name="form1">
-        <!-- <form class="form" action="http://httpbin.org/get" method="get" name="form1"></form> -->
-        <!-- или альтернативный вариант-->
+    <fieldset>
+        <legend>Personal Data</legend>
+        <form class="form" action="http://httpbin.org/post" method="post" name="form1">
+            <!-- <form class="form" action="http://httpbin.org/get" method="get" name="form1"></form> -->
+            <!-- или альтернативный вариант-->
 
-        <div class="innerDivs">
-            <p id="formTitle">Personal Data</p>
-            <label>
-                <p>First name: <input type="text" name="name" placeholder='First name' autofocus></p>
-            </label>
-            <label>
-                <p>Surname: <input type="text" name="name" placeholder='Surname'></p>
-            </label>
-            <label>
-                <p>Middle name: <input type="text" name="name" placeholder='Middle name'></p>
-            </label>
+            <div>
 
-            <label>You are:
-                <input type="radio" name="Male" value="Male">Male
-                <input type="radio" name="Male" value="Female">Female
-            </label>
+                <label>
+                    <p>First name: <input type="text" name="name" placeholder='First name' autofocus></p>
+                </label>
+                <label>
+                    <p>Surname: <input type="text" name="name" placeholder='Surname'></p>
+                </label>
+                <label>
+                    <p>Middle name: <input type="text" name="name" placeholder='Middle name'></p>
+                </label>
 
-            <label>
-                <p>Age: <input type="number" name="Age" placeholder='How old are you?' min="18" max="101"></p>
-            </label>
-            <label>Country of Residence
-                <select name="choose">
-                    <option disabled>Residence</option>
-                    <option value="1">Russia</option>
-                    <option value="2">Any wonderland</option>
-                </select>
-            </label>
-            <label>
-                <p>City
-                    <input type="checkbox" name="City" value="Chips"> Ryazan
-                    <input type="checkbox" name="City" value="Carrot"> Moscow
-            </label>
-            <label>
-                <p>Photography <input type="file"></p>
-            </label>
-            <hr>
-            <label>Title
-                <select size="8" name="choose" id="title">
-                    <optgroup label="Technologies">
-                        <option value="1">Web master</option>
-                        <option value="2">Database administrator</option>
-                        <option value="3">Computer-aided design</option>
-                    <optgroup label="Finance">
-                        <option value="4">Economic planning</option>
-                        <option value="5">Management accounting</option>
-                        <option value="6">Budgeting and planning</option>
-                </select></label>
-            <br>
-            <label>Salary
-                <input type="range" min="0" max="100" step="1" value="50"></label>
-            <br>
-            <textarea name="comment" placeholder='Tell us about yourself...' cols="30" rows="10"></textarea>
-        </div>
+                <label>You are:
+                    <input type="radio" name="Male" value="Male">Male
+                    <input type="radio" name="Male" value="Female">Female
+                </label>
 
-        <div class="innerDivs">
-            <p id="contactInfo">Contact Information</p>
+                <label>
+                    <p>Age: <input type="number" name="Age" placeholder='How old are you?' min="18" max="101"></p>
+                </label>
+                <label>Country of Residence
+                    <select name="choose">
+                        <option disabled>Residence</option>
+                        <option value="1">Russia</option>
+                        <option value="2">Any wonderland</option>
+                    </select>
+                </label>
+                <label>
+                    <p>City
+                        <input type="checkbox" name="City" value="Chips"> Ryazan
+                        <input type="checkbox" name="City" value="Carrot"> Moscow
+                </label>
+                <label>
+                    <p>Photography <input type="file"></p>
+                </label>
+                <hr>
+                <label>Title
+                    <select size="8" name="choose" id="title">
+                        <optgroup label="Technologies">
+                            <option value="1">Web master</option>
+                            <option value="2">Database administrator</option>
+                            <option value="3">Computer-aided design</option>
+                        <optgroup label="Finance">
+                            <option value="4">Economic planning</option>
+                            <option value="5">Management accounting</option>
+                            <option value="6">Budgeting and planning</option>
+                    </select></label>
+                <br>
+                <label>Salary
+                    <input type="range" min="0" max="100" step="1" value="50"></label>
+                <br>
+                <textarea name="comment" placeholder='Tell us about yourself...' cols="30" rows="10"></textarea>
+            </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Contact Information</legend>
+        <div>
+
             <label>
                 <p>Site: <input type="url" name="Site" placeholder='www.yoursite.com' /></p>
             </label>
@@ -80,13 +84,13 @@
                 <p>Phone: <input type="tel" name="Phone" placeholder='+7 (012) 3456789' /></p>
             </label>
         </div>
+    </fieldset>
 
 
+    <div class="intoForm"><label class="Password">Password</label> <input type="password" required></label></div>
 
-        <div class="intoForm"><label class="Password">Password</label> <input type="password" required></label></div>
 
-
-        <p><input type="submit" value="Отправить"> </p>
+    <p><input type="submit" value="Отправить"> </p>
     </form>
 
 </body>
