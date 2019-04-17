@@ -1,4 +1,5 @@
 .nav {
+    
     height: 90px;
     display: flex;
     align-items: stretch;
@@ -25,7 +26,7 @@
     text-decoration: none;
     font-size: 13px;
     font-weight: 700;
-    line-height: color: #6d6e71;
+    color: #6d6e71;
     padding: 30px 10px;
     display: inline-block;
 }
@@ -55,4 +56,11 @@
     border-right: 10px solid transparent;
     border-bottom: 10px solid #1faae2;
     margin-left: 438px;
+}
+.nav-right>img{
+    margin-right: 1px;
+}
+
+.nav-right>input{
+    padding: 0px;
 }
