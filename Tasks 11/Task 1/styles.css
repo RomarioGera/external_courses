@@ -1,0 +1,17 @@
+.monkey {
+    width: 500px;
+    height: 300px;
+}
+
+.monkey:hover {
+    clip-path: circle(150px at center);
+}
+
+.bart {
+    width: 200px;
+    height: 200px;
+}
+
+.bart:hover {
+    mask-image: url(img/alpha-mask.png);
+}
