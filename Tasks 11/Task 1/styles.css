@@ -5,6 +5,7 @@
     padding: 5px;
     text-align: center;
 }
+
 .monkey {
     width: 500px;
     height: 300px;
@@ -17,19 +18,13 @@
 .monkey:active {
     clip-path: polygon(50% 0%, 80% 100%, 0 40%, 100% 40%, 20% 100%);
 }
-  #bart{
-      margin-top: 5px;
+
+#bart {
+    margin-top: 5px;
     text-align: center;
     border: 1px solid black;
     width: 400px;
     height: 300px;
     padding: 5px;
-  }
-.bart {
-    width: 200px;
-    height: 200px;
 }
 
-.bart:hover {
-    mask-image: url(../img/alpha-mask.png);
-}
