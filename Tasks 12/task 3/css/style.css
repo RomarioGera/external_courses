@@ -1,0 +1,9 @@
+.box {
+  width: 620px;
+  height: 130px;
+  border: 1px solid #000;
+}
+
+.rating-line_item {
+  display: inline-block;
+}
