@@ -4,5 +4,5 @@ function a(myArray) {
     for (i = 0; i < myArray.length; i++) {
         console.log(myArray[i]);
     }
-    console.log('Общее количество = ' + myArray.length)
+    console.log('Общее количество = ' + myArray.length);
 }

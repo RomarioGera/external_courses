@@ -11,4 +11,4 @@ function typeOfNumber(input) {
     }
 }
 
-typeOfNumber(input)
+typeOfNumber(input);

@@ -9,5 +9,5 @@ function a(input) {
       }
     }
   }
-  return 'False - Массив не содержит дубликатов'
+  return 'False - Массив не содержит дубликатов';
 }
