@@ -6,8 +6,8 @@ function a(data) {
     } else if (typeof (data) === 'string') {
         console.log('string');
     } else {
-        console.log('undefined')
+        console.log('undefined');
     }
 }
 
-a(data)
+a(data);
