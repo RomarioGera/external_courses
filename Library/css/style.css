@@ -330,7 +330,7 @@ p.aside-history__time {
 .book-view__cover {
   width: 200px;
   height: 275px;
-  background: url('../img/book01.png') 50% 50% no-repeat;
+  background: url() 50% 50% no-repeat;
   background-size: cover;
 }
 

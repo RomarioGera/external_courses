@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css">
-  <script src="./script/json.js"></script>
+  <script src="./script/script.js"></script>
   <title>Library</title>
 </head>
 
@@ -68,10 +68,10 @@
       <div class="main-nav">
         <div class="main-nav-menu">
           <ul class="main-nav-menu__list">
-            <li class="main-nav-menu__item">All Books</li>
-            <li class="main-nav-menu__item">Most Recent</li>
-            <li class="main-nav-menu__item">Most Popular</li>
-            <li class="main-nav-menu__item">Free Books</li>
+            <li class="main-nav-menu__item" id="allBooksButton">All Books</li>
+            <li class="main-nav-menu__item" id="recentButton">Most Recent</li>
+            <li class="main-nav-menu__item" id="mostPopularButton">Most Popular</li>
+            <li class="main-nav-menu__item" id="freeBooksButton">Free Books</li>
           </ul>
         </div>
         <div class="main-nav-search">
@@ -82,27 +82,9 @@
       <div class="main-content">
         <div class="book-view">
           <div class="book-view__cover"></div>
-          <div class="book-view__title">Cakes & Bakes</div>
-          <div class="book-view__author">by Sanjeev Kapoor</div>
-          <div class="book-view__rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-            <i class="far fa-star"></i>
-          </div>
-        </div>
-        <div class="book-view">
-          <div class="book-view__cover"></div>
-          <div class="book-view__title">Cakes & Bakes</div>
-          <div class="book-view__author">by Sanjeev Kapoor</div>
-          <div class="book-view__rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-            <i class="far fa-star"></i>
-          </div>
+          <div class="book-view__title"></div>
+          <div class="book-view__author"></div>
+          <div class="book-view__rating"></div>
         </div>
       </div>
     </main>
