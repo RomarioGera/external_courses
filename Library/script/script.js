@@ -1,11 +1,3 @@
-// get Buttons
-var allBooksButton = document.querySelector('#allBooksButton');
-var recentButton = document.querySelector('#recentButton');
-var mostPopularButton = document.querySelector('#mostPopularButton');
-var freeBooksButton = document.querySelector('#freeBooksButton');
-
-
-
 // get Library data
 
 /* const xhr = new XMLHttpRequest();
@@ -152,25 +144,25 @@ var books = [{
 
 // Filter: Search
 var searchInput = document.querySelector('.main-nav-search__input');
-var magnifierButton = document.querySelector('.fa-search:before');
+//var magnifierButton = document.querySelector('.fa-search:before');
 var searchFilter = searchInput.value.toUpperCase();
-searchInput.addEventListener('keypress', function (e) {
-    var key = e.which || e.keyCode;
-    if (key === 13) {
-        positiveSearch;
-    }
-});
-magnifierButton.addEventListener('click', function() {positiveSearch});
+// searchInput.addEventListener('keypress', function (e) {
+//     var key = e.which || e.keyCode;
+//     if (key === 13) {
+//         positiveSearch();
+//     }
+// });
+// magnifierButton.addEventListener('click', function() {positiveSearch()});
 
-// var foundByTitle = books.forEach(function (element) {
-//     element.title.toUpperCase();
+var foundByTitle = books.forEach(function (element) {
+    element.title.toUpperCase();
 });
-// var foundByFirstName = books.forEach(function (element) {
-//     element.author.firstName.toUpperCase();
-// });
-// var foundByLastName = books.forEach(function (element) {
-//     element.author.lastName.toUpperCase();
-// });
+var foundByFirstName = books.forEach(function (element) {
+    element.author.firstName.toUpperCase();
+});
+var foundByLastName = books.forEach(function (element) {
+    element.author.lastName.toUpperCase();
+});
 
 // var found = function () {
 //     if (searchFilter == foundByFirstName || foundByLastName || foundByTitle) {
@@ -213,3 +205,19 @@ var positiveSearchName = arrayUnique(positiveSearchFirstName.concat(positiveSear
 var positiveSearch = arrayUnique(positiveSearchTitle.concat(positiveSearchName));
 
 var positiveSearch = Array.from(new Set([...positiveSearchFirstName, ...positiveSearchLastName, ...positiveSearchTitle]));
+
+var positiveSearch = function (searchFilter) {
+    return books.filter(function () {
+        if (searchFilter == foundByFirstName || foundByLastName || foundByTitle)
+            return true;
+    });
+};
+
+// Filter: Buttons
+//// get Buttons
+var allBooksButton = document.querySelector('#allBooksButton');
+var recentButton = document.querySelector('#recentButton');
+var mostPopularButton = document.querySelector('#mostPopularButton');
+var freeBooksButton = document.querySelector('#freeBooksButton');
+
+//// add Events

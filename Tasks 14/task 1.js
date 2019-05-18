@@ -31,7 +31,7 @@ var Calculator = (function () {
         getResult: function () {
             return state;
         }
-    }
+    };
 })();
 
 Calculator.setState(1);
