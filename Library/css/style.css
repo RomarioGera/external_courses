@@ -207,6 +207,7 @@ body {
 }
 
 .aside-history {
+  max-height: 300px;
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 12px;
