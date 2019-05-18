@@ -174,10 +174,9 @@ var foundByLastName = books.forEach(function (element) {
 
 var positiveSearchTitle = function (searchFilter) {
     return books.filter(function (el) {
-        return el.title.toUpperCase().indexOf(searchFilter.toUpperCase()) > -1;
+        return el.title.toUpperCase().indexOf(searchFilter.toUpperCase()) > -1; 
     });
 };
-
 var positiveSearchFirstName = function (searchFilter) {
     return books.filter(function (el) {
         return el.author.firstName.toUpperCase().indexOf(searchFilter.toUpperCase()) > -1;

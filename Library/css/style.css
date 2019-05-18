@@ -212,7 +212,7 @@ body {
   font-size: 12px;
   color: rgba(111, 125, 149, 255);
   text-align: justify;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .aside-history__item {
@@ -319,7 +319,7 @@ p.aside-history__time {
 .main-content {
   display: flex;
   flex-flow: row wrap;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .book-view {
