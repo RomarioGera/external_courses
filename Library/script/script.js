@@ -164,7 +164,7 @@ magnifierButton.addEventListener('click', function() {positiveSearch});
 
 // var foundByTitle = books.forEach(function (element) {
 //     element.title.toUpperCase();
-});
+//});
 // var foundByFirstName = books.forEach(function (element) {
 //     element.author.firstName.toUpperCase();
 // });
@@ -182,10 +182,9 @@ magnifierButton.addEventListener('click', function() {positiveSearch});
 
 var positiveSearchTitle = function (searchFilter) {
     return books.filter(function (el) {
-        return el.title.toUpperCase().indexOf(searchFilter.toUpperCase()) > -1;
+        return el.title.toUpperCase().indexOf(searchFilter.toUpperCase()) > -1; 
     });
 };
-
 var positiveSearchFirstName = function (searchFilter) {
     return books.filter(function (el) {
         return el.author.firstName.toUpperCase().indexOf(searchFilter.toUpperCase()) > -1;
