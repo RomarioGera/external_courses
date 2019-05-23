@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Library</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" media="screen" href="./assets/style.css">
+  <script src="./Content/views/library.js" defer></script>
+  <script src="./Content/controllers/filter.js" defer></script>
+  <script src="./Content/controllers/sort.js" defer></script>
+  <script src="./Content/controllers/search.js" defer></script>
+  <script src="./Content/utils/localstorage.js" defer></script>
+  <script src="./Content/models/addbook.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <nav>
+      <div class="navigation">
+        <div class="navigation_user"> <img src="https://pp.userapi.com/c856136/v856136763/35e73/Fi6vHTmi41s.jpg"
+            alt="John Doe">John Doe</div>
+        <ul class="navigation_menu">
+          <li>
+            <a href="#">Help Center</a>
+          </li>
+          <li>
+            <a href="#">Our suppport</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="content">
+      <div class="wrapper container">
+        <aside class="aside">
+          <div class="aside__item">
+            <button class="add-book" type="button"><span><i class="fas fa-plus"></i></span> add a book</button>
+          </div>
+          <div class="aside__item aside__item--top-separator">
+            <ul class="aside-menu">
+              <li class="aside-menu__item"><span><i class="fas fa-book"></i></span>Non Fiction</li>
+              <li class="aside-menu__item"><span><i class="fas fa-globe-europe"></i></span>Browse</li>
+              <li class="aside-menu__item"><span><i class="fas fa-shopping-cart"></i></span>Buy Books</li>
+              <li class="aside-menu__item"><span><i class="fas fa-star"></i></span>Favourite Books</li>
+              <li class="aside-menu__item"><span><i class="fas fa-th-list"></i></span>Wishlist</li>
+              <li class="aside-menu__item"><span><i class="fas fa-history"></i></span>History</li>
+            </ul>
+          </div>
+          <div class="aside__item aside__item--top-separator">
+            <ul class="aside-sort">
+              <li class="aside-sort__item mustReadButton"><span class="aside-sort-circle aside-sort-circle--pink"><i
+                    class="fas fa-circle"></i></span>Must Read Titles</li>
+              <li class="aside-sort__item"><span class="aside-sort-circle aside-sort-circle--yellow"><i
+                    class="fas fa-circle"></i></span>Best Of List</li>
+              <li class="aside-sort__item"><span class="aside-sort-circle aside-sort-circle--blue"><i
+                    class="fas fa-circle"></i></span>Classic Novels</li>
+              <li class="aside-sort__item"><span class="aside-sort-circle aside-sort-circle--violet"><i
+                    class="fas fa-circle"></i></span>Non Fiction</li>
+            </ul>
+          </div>
+          <div class="aside__item aside__item--top-separator">
+            <div class="aside-history">
+              <div class="aside-history__item">
+                <p>You added <span class="aside-history__book-name"><strong>The Trial</strong></span> by <span
+                    class="aside-history__book-author"><strong>Franz Kafka</strong></span> to your <span
+                    class="aside-history__book-section"><strong>Must Read Titles</strong></span>.</p>
+                <p class="aside-history__time">24 minutes ago</p>
+                <div class="aside-history__icon"><i class="fas fa-history"></i></div>
+              </div>
+              <div class="aside-history__item">
+                <p>You added <span class="aside-history__book-name"><strong>The Trial</strong></span> by <span
+                    class="aside-history__book-author"><strong>Franz Kafka</strong></span> to your <span
+                    class="aside-history__book-section"><strong>Must Read Titles</strong></span>.</p>
+                <p class="aside-history__time">24 minutes ago</p>
+                <div class="aside-history__icon"><i class="fas fa-history"></i></div>
+              </div>
+              <div class="aside-history__item">
+                <p>You added <span class="aside-history__book-name"><strong>The Trial</strong></span> by <span
+                    class="aside-history__book-author"><strong>Franz Kafka</strong></span> to your <span
+                    class="aside-history__book-section"><strong>Must Read Titles</strong></span>.</p>
+                <p class="aside-history__time">24 minutes ago</p>
+                <div class="aside-history__icon"><i class="fas fa-history"></i></div>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <div class="content_books">
+          <div class="content_books_header">
+            Browse Available Books
+          </div>
+          <div class="main-nav">
+            <div class="main-nav-menu">
+              <ul class="main-nav-menu__list">
+                <li class="main-nav-menu__item" id="allBooksButton">All Books</li>
+                <li class="main-nav-menu__item" id="recentButton">Most Recent</li>
+                <li class="main-nav-menu__item" id="mostPopularButton">Most Popular</li>
+                <li class="main-nav-menu__item" id="freeBooksButton">Free Books</li>
+              </ul>
+            </div>
+            <div class="main-nav-search">
+              <input class="main-nav-search__input" type="text" placeholder="Enter Keywords">
+              <div class="main-nav-search__icon"><i class="fas fa-search"></i></div>
+            </div>
+          </div>
+          <div class="content_books_grid">
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer_settings"><i class="fas fa-question-circle"></i></div>
+        <div class="footer_question"><i class="fas fa-cog"></i></div>
+      </div>
+  </main>
+</body>
+
+</html>
