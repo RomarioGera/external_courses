@@ -39,12 +39,10 @@ function mostPopular() {
 
 function freeBooks() {
     if (searchInput.value === '') {
-        let result = books.filter(books => books.cost > 0);
-        console.log(result);
+        let result = books.filter(books => books.cost < 0);
         generateFiltered(result);
     } else {
-        let result = books.filter(books => books.cost > 0);
-        console.log(result);
+        let result = books.filter(books => books.cost < 0);
         generateFiltered(result);
     }
 }
