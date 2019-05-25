@@ -5,12 +5,13 @@ function getLibrary() {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', 'https://rsu-library-api.herokuapp.com/books', false);
     xhr.send();
-    return JSON.parse(xhr.responseText);
-}
+    if (xhr.status === 200) return JSON.parse(xhr.responseText);
+    else console.log(`Load books ERROR: ${xhr.status} : ${xhr.statusText}`);
+};
 
 // Creating main library content
 window.onload = function () {
-    generateBooks()
+    generateBooks();
 };
 
 function generateBooks() {
@@ -19,6 +20,8 @@ function generateBooks() {
         var booksContainer = document.querySelector('.content_books_grid');
         var book = createBook(anotherBook);
         booksContainer.appendChild(book);
+        // if (localHistory().length > 0) localHistory().forEach(history => renderHistory(history['text'], new Date(history['time'])));
+        searchInput.value = '';
     });
 }
 
@@ -122,3 +125,22 @@ function unrate(target) {
     target.classList.remove('rated');
 }
 
+// function renderHistory (text, time) {
+//     let history = new History;
+//     history.currentActionInfo(text);
+//     history.currentActionTime(time);
+//     history.addActionOnPage();
+  
+//     let newLocalHistory = localHistory();
+//     if (newLocalHistory.length >= 3) {
+//       newLocalHistory.shift();
+//       newLocalHistory.push({text: text, time: time});
+//     } else newLocalHistory.push({text: text, time: time});
+//     localStorage.setItem('HISTORY', JSON.stringify(newLocalHistory));
+  
+  
+//     setInterval(() => {
+//       history.currentActionTime(time);
+//       history.addActionOnPage();
+//     }, 60000);
+//   }

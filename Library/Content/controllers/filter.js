@@ -1,56 +1,31 @@
-const content = document.querySelector('.content_books_grid');
+const mustReadButton = document.querySelector('.mustReadButton');
+mustReadButton.addEventListener('click', mustRead);
 
-let sortBooks = [],
-    filteredBooks = [];
+const bestOfListButton = document.querySelector('.bestOfListButton');
+bestOfListButton.addEventListener('click', bestOfList);
 
-const allBooksButton = document.querySelector('#allBooksButton');
-allBooksButton.addEventListener('click', generateBooks);
+const classicNovelsButton = document.querySelector('.classicNovelsButton');
+classicNovelsButton.addEventListener('click', classicNovels);
 
-const recentButton = document.querySelector('#recentButton');
-recentButton.addEventListener('click', mostRecent);
+const nonfictionButton = document.querySelector('.nonfictionButton');
+nonfictionButton.addEventListener('click', nonfiction);
 
-const mostPopularButton = document.querySelector('#mostPopularButton');
-mostPopularButton.addEventListener('click', mostPopular);
+function mustRead() {
+    let result = books.filter(books => books.categories.includes("must_read"));
+    generateFiltered(result);
+};
 
-const freeBooksButton = document.querySelector('#freeBooksButton');
-freeBooksButton.addEventListener('click', freeBooks);
+function bestOfList() {
+    let result = books.filter(books => books.categories.includes("best"));
+    generateFiltered(result);
+};
 
-function mostRecent() {
-    if (searchInput.value === '') {
-        sortBooks = books;
-        sortBooks.sort((elem1, elem2) => elem2.updatedAt - elem1.updatedAt);
-        generateFiltered(sortBooks);
-    } else {
-        filteredBooks.sort((elem1, elem2) => elem2.updatedAt - elem1.updatedAt);
-        generateFiltered(sortBooks);
-    }
-}
+function classicNovels() {
+    let result = books.filter(books => books.categories.includes("classic"));
+    generateFiltered(result);
+};
 
-function mostPopular() {
-    if (searchInput.value === '') {
-        sortBooks = books;
-        sortBooks.sort((elem1, elem2) => elem2.rating - elem1.rating);
-        generateFiltered(sortBooks);
-    } else {
-        filteredBooks.sort((elem1, elem2) => elem2.rating - elem1.rating);
-        generateFiltered(sortBooks);
-    }
-}
-
-function freeBooks() {
-    if (searchInput.value === '') {
-        filteredBooks = books;
-        filteredBooks = filteredBooks.filter((elem) => elem.cost === 0);
-    } else {
-        filteredBooks = filteredBooks.filter((elem) => elem.cost === 0);
-        generateFiltered(filteredBooks);
-    }
-}
-
-// function activeButton() {
-//     var buttons = [allBooksButton, recentButton, mostPopularButton, freeBooksButton];
-//     for (var i = 0; i < buttons.length; i++) {
-//         buttons[i].className = '';
-//     }
-//     event.target.classList.add('main-nav-menu__item:active');
-// }
+function nonfiction() {
+    let result = books.filter(books => books.categories.includes("non_fiction"));
+    generateFiltered(result);
+};
