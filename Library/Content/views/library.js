@@ -1,5 +1,5 @@
 // Getting data
-var books = getLibrary();
+var books = getLibrary(); // myFetch
 
 function getLibrary() {
     var xhr = new XMLHttpRequest();

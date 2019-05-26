@@ -22,7 +22,7 @@ function mostRecent() {
         generateFiltered(sortBooks);
     } else {
         filteredBooks.sort((elem1, elem2) => elem2.updatedAt - elem1.updatedAt);
-        generateFiltered(sortBooks);
+        generateFiltered(filteredBooks);
     }
 }
 
@@ -33,7 +33,7 @@ function mostPopular() {
         generateFiltered(sortBooks);
     } else {
         filteredBooks.sort((elem1, elem2) => elem2.rating - elem1.rating);
-        generateFiltered(sortBooks);
+        generateFiltered(filteredBooks);
     }
 }
 
