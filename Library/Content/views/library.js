@@ -9,10 +9,7 @@ function getLibrary() {
     else console.log(`Load books ERROR: ${xhr.status} : ${xhr.statusText}`);
 };
 
-function getExistedHistory(){
-    var existedHistory = JSON.parse(localStorage['history']);
-    renderExistedHistory(existedHistory);
-};
+
 
 // Creating main library content
 window.onload = function () {

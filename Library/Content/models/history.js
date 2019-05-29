@@ -1,6 +1,9 @@
 function getDate() {
     var d = new Date();
     var curr_min = d.getMinutes();
+    if (curr_min.toString().length == 1) {
+        curr_min = "0" + curr_min;
+    }
     var curr_hour = d.getHours();
     var date = curr_hour + ':' + curr_min;
     return date;
@@ -19,13 +22,6 @@ function renderHistory(item) {
         '</p><div class="aside-history__icon"><i class="fas fa-history"></i></div>';
 
     if (historyBlock.children.length > 3) historyBlock.removeChild(historyBlock.lastElementChild);
-
     let JSONHistory = JSON.stringify(historyBlock.innerHTML);
-    localStorage.setItem('history', JSONHistory);
-
-};
-
-function renderExistedHistory(existedHistory){
-    let historyBlock = document.querySelector('.aside-history');
-    historyBlock.innerHTML = existedHistory;
+    saveItem('history', JSONHistory);
 }
