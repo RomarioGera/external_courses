@@ -4,7 +4,15 @@ let sortBooks = [],
     filteredBooks = [];
 
 const allBooksButton = document.querySelector('#allBooksButton');
-allBooksButton.addEventListener('click', generateBooks);
+allBooksButton.addEventListener('click', () => {
+    generateBooks();
+    var obj = {
+        toString: function () {
+            return 'choose All Books at ';
+        }
+    };
+    renderHistory(obj);
+});
 
 const recentButton = document.querySelector('#recentButton');
 recentButton.addEventListener('click', mostRecent);
@@ -23,7 +31,14 @@ function mostRecent() {
     } else {
         filteredBooks.sort((elem1, elem2) => elem2.updatedAt - elem1.updatedAt);
         generateFiltered(filteredBooks);
-    }
+    };
+    var obj = {
+        toString: function () {
+            return 'sorted Most Recent books at ';
+        }
+    };
+
+    renderHistory(obj);
 }
 
 function mostPopular() {
@@ -34,7 +49,14 @@ function mostPopular() {
     } else {
         filteredBooks.sort((elem1, elem2) => elem2.rating - elem1.rating);
         generateFiltered(filteredBooks);
-    }
+    };
+    var obj = {
+        toString: function () {
+            return 'sorted Most Popular books at ';
+        }
+    };
+
+    renderHistory(obj);
 }
 
 function freeBooks() {
@@ -44,5 +66,12 @@ function freeBooks() {
     } else {
         let result = books.filter(books => books.cost < 0);
         generateFiltered(result);
-    }
+    };
+    var obj = {
+        toString: function () {
+            return 'sorted Free Books at ';
+        }
+    };
+
+    renderHistory(obj);
 }

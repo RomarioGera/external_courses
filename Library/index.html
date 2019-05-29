@@ -8,11 +8,12 @@
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" media="screen" href="./assets/style.css">
   <script src="./Content/views/library.js" defer></script>
+  <script src="./Content/models/history.js" defer></script>
   <script src="./Content/controllers/filter.js" defer></script>
   <script src="./Content/controllers/sort.js" defer></script>
   <script src="./Content/controllers/search.js" defer></script>
   <script src="./Content/utils/localstorage.js" defer></script>
-  <script src="./Content/models/addbook.js" defer></script>
+
 </head>
 
 <body>
@@ -53,35 +54,16 @@
                     class="fas fa-circle"></i></span>Must Read Titles</li>
               <li class="aside-sort__item bestOfListButton"><span class="aside-sort-circle aside-sort-circle--yellow"><i
                     class="fas fa-circle"></i></span>Best Of List</li>
-              <li class="aside-sort__item classicNovelsButton"><span class="aside-sort-circle aside-sort-circle--blue"><i
-                    class="fas fa-circle"></i></span>Classic Novels</li>
-              <li class="aside-sort__item nonfictionButton"><span class="aside-sort-circle aside-sort-circle--violet"><i
+              <li class="aside-sort__item classicNovelsButton"><span
+                  class="aside-sort-circle aside-sort-circle--blue"><i class="fas fa-circle"></i></span>Classic Novels
+              </li>
+              <li class="aside-sort__item nonFictionButton"><span class="aside-sort-circle aside-sort-circle--violet"><i
                     class="fas fa-circle"></i></span>Non Fiction</li>
             </ul>
           </div>
           <div class="aside__item aside__item--top-separator">
             <div class="aside-history">
-              <div class="aside-history__item">
-                <p>You added <span class="aside-history__book-name"><strong>The Trial</strong></span> by <span
-                    class="aside-history__book-author"><strong>Franz Kafka</strong></span> to your <span
-                    class="aside-history__book-section"><strong>Must Read Titles</strong></span>.</p>
-                <p class="aside-history__time">24 minutes ago</p>
-                <div class="aside-history__icon"><i class="fas fa-history"></i></div>
-              </div>
-              <div class="aside-history__item">
-                <p>You added <span class="aside-history__book-name"><strong>The Trial</strong></span> by <span
-                    class="aside-history__book-author"><strong>Franz Kafka</strong></span> to your <span
-                    class="aside-history__book-section"><strong>Must Read Titles</strong></span>.</p>
-                <p class="aside-history__time">24 minutes ago</p>
-                <div class="aside-history__icon"><i class="fas fa-history"></i></div>
-              </div>
-              <div class="aside-history__item">
-                <p>You added <span class="aside-history__book-name"><strong>The Trial</strong></span> by <span
-                    class="aside-history__book-author"><strong>Franz Kafka</strong></span> to your <span
-                    class="aside-history__book-section"><strong>Must Read Titles</strong></span>.</p>
-                <p class="aside-history__time">24 minutes ago</p>
-                <div class="aside-history__icon"><i class="fas fa-history"></i></div>
-              </div>
+              
             </div>
           </div>
         </aside>

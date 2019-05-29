@@ -139,6 +139,7 @@ main {
   background-color: #1f2637;
   margin-top: 50px;
   position: fixed;
+  height: -webkit-fill-available;
 }
 
 .aside__item--top-separator {
@@ -246,7 +247,7 @@ main {
 }
 
 .aside-history {
-  max-height: 300px;
+  max-height: 250px;
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 12px;

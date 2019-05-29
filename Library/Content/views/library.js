@@ -100,6 +100,7 @@ function createRating(rating, anotherBook) {
 var allRatings = document.querySelectorAll('div.rating.star_hover');
 for (var i = 0; i < allRatings.length; i++) {
     allRatings[i].addEventListener('click', function () {
+        console.log('work');
         var target = event.target;
         if (target.className === 'star') {
             rate(target);
