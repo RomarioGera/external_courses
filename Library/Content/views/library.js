@@ -9,6 +9,11 @@ function getLibrary() {
     else console.log(`Load books ERROR: ${xhr.status} : ${xhr.statusText}`);
 };
 
+function getExistedHistory(){
+    var existedHistory = JSON.parse(localStorage['history']);
+    renderExistedHistory(existedHistory);
+};
+
 // Creating main library content
 window.onload = function () {
     generateBooks();
@@ -20,15 +25,13 @@ function generateBooks() {
         var booksContainer = document.querySelector('.content_books_grid');
         var book = createBook(anotherBook);
         booksContainer.appendChild(book);
-        // if (localHistory().length > 0) localHistory().forEach(history => renderHistory(history['text'], new Date(history['time'])));
         searchInput.value = '';
     });
+    getExistedHistory();
 }
 
 function clearMain() {
     document.querySelector('.content_books_grid').innerText = '';
-    // document.querySelector('.main-title').innerText = '';
-    // document.querySelector('.main-nav').innerText = '';
 }
 
 function generateFiltered(result) {
@@ -100,7 +103,6 @@ function createRating(rating, anotherBook) {
 var allRatings = document.querySelectorAll('div.rating.star_hover');
 for (var i = 0; i < allRatings.length; i++) {
     allRatings[i].addEventListener('click', function () {
-        console.log('work');
         var target = event.target;
         if (target.className === 'star') {
             rate(target);
@@ -125,23 +127,3 @@ function unrate(target) {
     books[bookNumber - 1].rating = 0;
     target.classList.remove('rated');
 }
-
-// function renderHistory (text, time) {
-//     let history = new History;
-//     history.currentActionInfo(text);
-//     history.currentActionTime(time);
-//     history.addActionOnPage();
-  
-//     let newLocalHistory = localHistory();
-//     if (newLocalHistory.length >= 3) {
-//       newLocalHistory.shift();
-//       newLocalHistory.push({text: text, time: time});
-//     } else newLocalHistory.push({text: text, time: time});
-//     localStorage.setItem('HISTORY', JSON.stringify(newLocalHistory));
-  
-  
-//     setInterval(() => {
-//       history.currentActionTime(time);
-//       history.addActionOnPage();
-//     }, 60000);
-//   }

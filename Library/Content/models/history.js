@@ -17,7 +17,15 @@ function renderHistory(item) {
         '<p class="aside-history__time">' +
         getDate() +
         '</p><div class="aside-history__icon"><i class="fas fa-history"></i></div>';
+
     if (historyBlock.children.length > 3) historyBlock.removeChild(historyBlock.lastElementChild);
-    
+
+    let JSONHistory = JSON.stringify(historyBlock.innerHTML);
+    localStorage.setItem('history', JSONHistory);
 
 };
+
+function renderExistedHistory(existedHistory){
+    let historyBlock = document.querySelector('.aside-history');
+    historyBlock.innerHTML = existedHistory;
+}
