@@ -61,10 +61,10 @@ function mostPopular() {
 
 function freeBooks() {
     if (searchInput.value === '') {
-        let result = books.filter(books => books.cost < 0);
+        let result = books.filter(books => books.cost <= 0 || null || undefined);
         generateFiltered(result);
     } else {
-        let result = books.filter(books => books.cost < 0);
+        let result = books.filter(books => books.cost <= 0 || null || undefined);
         generateFiltered(result);
     };
     var obj = {
