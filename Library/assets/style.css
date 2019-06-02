@@ -71,6 +71,7 @@ main {
   width: 100%;
   align-self: flex-start;
   display: flex;
+  overflow: hidden;
 }
 
 /* TOP NAVIGATION */
@@ -204,6 +205,11 @@ main {
   color: #FFF;
 }
 
+.aside-sort__item:active {
+  background-color: #15a4fa;
+  color: #FFF;
+}
+
 .aside-menu__item>span {
   width: 16px;
   margin-right: 12px;
@@ -311,6 +317,12 @@ p.aside-history__time {
   border-radius: 10px;
 }
 
+.main-nav-menu__item:active {
+  background-color: #97b3ce;
+  color: #fff;
+  border-radius: 10px;
+}
+
 .main-nav-menu__item__active {
   display: inline-block;
   margin: 0 6px;
@@ -362,6 +374,7 @@ p.aside-history__time {
   flex-direction: column;
   margin-top: 50px;
   margin-left: 200px;
+
 }
 
 .content_books_header {
@@ -377,12 +390,13 @@ p.aside-history__time {
 .content_books_grid {
   flex: 1 1 auto;
   padding: 0 15px;
-  overflow-y: auto;
+  overflow-y: scroll;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin-bottom: 45px;
+
 }
 
 /* BOOKS category */
